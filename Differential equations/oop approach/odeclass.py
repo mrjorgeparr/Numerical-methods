@@ -35,12 +35,6 @@ class ODE:
     def recomp_exact(self):
         self.__exact = [self.__e(it) for it in self.__t]
 
-    def ret_vals(self, method):
-        if method == "fe":
-            return self.__t, self.__forward_euler_map.vals
-        elif method == "be":
-            return self.__t
-
     # to be used as setter functions
 
     def icon(self, newicon):
