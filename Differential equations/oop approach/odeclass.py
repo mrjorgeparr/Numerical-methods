@@ -151,8 +151,6 @@ class ODE:
         if not self.__leapfrog_map.todate:
             mesh = iter(self.__t[2:])
             # we can use forward euler just to initialize the method, because the one-step error is second order
-            # if the following line is uncommented, you must import forward_euler_iteration from utils
-            # mapped = [icon[1], forward_euler_iteration(h=h, t=tf - n*h, vars=vars, f=kwargs.get('expr'), yn=icon[1])]
             mapped = [self.__icon[1], rk2_iteration(t=self.__t[0], yn=self.__icon[1], h=self.__h, expr=self.__expr, vars=["t", "u"])]
 
             for idx, t in enumerate(mesh):
