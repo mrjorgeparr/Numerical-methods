@@ -1,0 +1,6 @@
+Implementations of linear multi-step methods for approximations of initial value problems
+    Adams-Basforth: two step and 4 step Adams-Bashforth implementation, with test code
+    Adams-Moultoun: 2 and 4 step Adams-Moulton, predictor corrector method
+    Leapfrog: Leapfrog implementation and test code, initialization can be done with either RK2 or forward Euler, one is left as a comment
+    Backwards-differences: order 2 and order 4
+    utils: functions of one iteration of some one step methods of different order to be used in the LMMs, also decorator definition for plot generation
