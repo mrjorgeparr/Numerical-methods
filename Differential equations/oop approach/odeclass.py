@@ -391,7 +391,7 @@ class ODE:
             print(f"The global error obtained for backward euler is {e}")
         elif method == "rk2":
             if not self.__rk2_map.todate:
-                self.backwards_euler()
+                self.rk2()
             print(f"For the following ODE problem")
             print(f"\tu'={self.__expr}")
             self.print_params()
@@ -399,7 +399,7 @@ class ODE:
             print(f"The global error obtained for rk2 is {e}")
         elif method == "rk4":
             if not self.__rk4_map.todate:
-                self.backwards_euler()
+                self.rk4()
             print(f"For the following ODE problem")
             print(f"\tu'={self.__expr}")
             self.print_params()
@@ -407,7 +407,7 @@ class ODE:
             print(f"The global error obtained for rk2 is {e}")
         elif method == "trpz":
             if not self.__trapezoidal_map.todate:
-                self.backwards_euler()
+                self.trapezoidal()
             print(f"For the following ODE problem")
             print(f"\tu'={self.__expr}")
             self.print_params()
