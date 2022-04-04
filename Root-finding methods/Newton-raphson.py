@@ -17,8 +17,7 @@ def newton_raphson(expr,var, x0: float) -> float:
     # if it is below a certain threshold, we consider the solution to be good enough and we dont iterate anymore
     start = time()
     while abs(f(res)) > pow(10,-10):
-        next = res - f(res)/(df(res))
-        res = next
+        res -= f(res)/(df(res))
         iterations += 1
     end = time()
     print(f"\nThe algorithm took {iterations} iterations to converge, (time, result): ({round(end- start, 6)},{round(res,4)})")
