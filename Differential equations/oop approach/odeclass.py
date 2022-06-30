@@ -1,3 +1,5 @@
+# All code done by Jorge Parreño, rights reserved
+
 from sympy import sympify, lambdify
 import matplotlib.pyplot as plt
 import numpy as np
