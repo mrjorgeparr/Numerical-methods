@@ -88,7 +88,6 @@ class ODE:
         plt.grid()
         plt.show()
  # --------------LINEAR MULTISTEP METHODS ---------------------------------------------
-
     def bd2(self, plot=False):
         if not self.__bd2_map.todate:
             _mesh_ = iter(self.__t[2:])

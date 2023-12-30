@@ -13,12 +13,12 @@ od.ab2(True)
 
 
 # checking the order of forward and backward euler, can be refined into a method if necessary
-"""
+
 e1 = od.global_error("fe")
 od.h(1/80)
 e2 = od.global_error("fe")
 print(f"Order of forward euler is : {log2(abs(e1)/abs(e2))}")
-"""
+
 
 """
 e1 = od.global_error("be")
