@@ -1,2 +1,5 @@
 # Numerical-methods
-A bundle of numerical methods from ODE approximations, to linear algebra, root finding methods and more
+
+The repository contains a compendious arrays of from-scratch implementations of various approximation algorithms in different domains
+
+
